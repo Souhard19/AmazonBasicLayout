@@ -1,0 +1,53 @@
+details {
+	text-align: left;
+}
+
+	#tiles {
+		width: 90%;
+		height: 17vh;
+
+		display: flex;
+		cursor: pointer;
+	}
+		#tiles :hover {
+			border: 3px solid rgb(21, 112, 112);
+			border-radius: 1.1vw;
+		}
+		.selectedTile {
+			border: 3px solid rgb(21, 112, 112);
+			border-radius: 1.1vw;
+		}
+
+		.feature {
+			background-color: gainsboro;
+			border: 0;
+			border-radius: 8px;
+
+			margin-right: 12px;
+			margin-top: 6px;
+
+			font-weight: 600;
+
+			width: 9em;
+			height: 2.6em;
+			cursor: pointer;
+		}
+		.selected_feature {
+			background-color: gray;
+			color: white;
+		}
+
+		.buy {
+			color: white;
+			background-color: teal;
+			border: 0;
+			border-radius: 8px;
+
+			margin-top: 36px;
+
+			font-weight: 600;
+
+			width: 9em;
+			height: 3.1em;
+			cursor: pointer;
+		}
