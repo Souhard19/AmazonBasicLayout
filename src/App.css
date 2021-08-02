@@ -56,14 +56,14 @@ nav {
 	}
 		.heartbeat_feature i {
 			color: red;
-			animation: beat 1s infinite;
+			animation: beat 1.1s infinite;
 		}
 		@keyframes beat {
 			0% {
-				transform: scale(1.1,1.1);
+				transform: scale(1.7,1.7);
 			}
 			50% {
-				transform: scale(1, 1);
+				transform: scale(1.1, 1.1);
 			}
 			100% {
 				transform: scale(0.8,0.8);
@@ -71,6 +71,9 @@ nav {
 		}
 		.heartbeat_feature p {
 			color: rgb(25, 131, 81);
+			cursor: default;
+
+			margin: 19px;
 		}
 
 #details {
@@ -118,7 +121,7 @@ nav {
 			border: 0;
 			border-radius: 8px;
 
-			margin-top: 36px;
+			margin-top: 21px;
 
 			font-weight: 600;
 
