@@ -88,8 +88,8 @@ nav {
 		cursor: pointer;
 	}
 		#tiles :hover {
-			border: 3px solid rgb(21, 112, 112);
 			border-radius: 1.1vw;
+			box-shadow: 2px 2px 10px rgb(83, 83, 83);
 		}
 		.selectedTile {
 			border: 3px solid rgb(21, 112, 112);
@@ -111,8 +111,8 @@ nav {
 			cursor: pointer;
 		}
 		.selected_feature {
-			background-color: gray;
-			color: white;
+			background-color: rgb(117, 117, 117);
+			color: rgb(221, 221, 221);
 		}
 
 		.buy {
