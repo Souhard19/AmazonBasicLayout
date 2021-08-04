@@ -9,9 +9,8 @@ export default function productPrev(props){
 
 	return(
 		<div className='productPreview image_display_section'>
-			<img src={props.img} alt="" />
 
-			
+			<img src={props.img} alt="" />
 
 			<div className='heartbeat_feature'>
 				{

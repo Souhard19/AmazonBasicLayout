@@ -11,7 +11,6 @@
 	}
 		#tiles img {
 			border-radius: 1.1vw;
-			/* box-shadow: 0px 0px 1px grey; */
 		}
 		#tiles :hover {
 			border-radius: 1.1vw;
@@ -37,8 +36,8 @@
 			cursor: pointer;
 		}
 		.selected_feature {
-			background-color: gray;
-			color: white;
+			background-color: rgb(117, 117, 117);
+			color: rgb(240, 240, 240);
 		}
 
 		.buy {
@@ -47,7 +46,7 @@
 			border: 0;
 			border-radius: 8px;
 
-			margin-top: 20px;
+			margin-top: 21px;
 
 			font-weight: 600;
 
