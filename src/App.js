@@ -17,6 +17,13 @@ class App extends Component {
 		selectedFeature: 0,
 	}
 
+	updateTile = (pos) => {
+		this.setState({selectedTile: pos})
+	}
+	updateFeature = (pos) => {
+		this.setState({selectedFeature: pos})
+	}
+
 	render() {
 		return (
 			<div className="App">
@@ -26,7 +33,8 @@ class App extends Component {
 
 				<div id="prouct_info">
 					<ProductPrev img={this.state.data.colorOptions[this.state.selectedTile].imageUrl} selectedFeature={this.state.selectedFeature} />
-					<ProductDeatils data={this.state.data} selectedTile={this.state.selectedTile} selectedFeature={this.state.selectedFeature} />
+					<ProductDeatils data={this.state.data} selectedTile={this.state.selectedTile} selectedFeature={this.state.selectedFeature} 
+						updateTile={this.updateTile} updateFeature={this.updateFeature} />
 				</div>
 			</div>
 		);

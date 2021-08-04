@@ -9,7 +9,7 @@ const productDeatils = (props) => {
                css = 'selectedTile'
           }
           return (
-               <img key={pos} className={css} src={item.imageUrl} alt={item.styleName} />
+               <img key={pos} className={css} src={item.imageUrl} alt={item.styleName} onClick={() => props.updateTile(pos)} />
           );
      });
 
@@ -19,7 +19,7 @@ const productDeatils = (props) => {
                css += ' selected_feature'
           }
           return (
-               <button className={css}>{props.data.featureList[pos]}</button>
+               <button className={css} onClick={() => props.updateFeature(pos)}>{props.data.featureList[pos]}</button>
           );
      });
 
