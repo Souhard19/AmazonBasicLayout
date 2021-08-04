@@ -13,7 +13,7 @@ class App extends Component {
 
 	state = {
 		data: data,
-		selectedTile: 3,
+		selectedTile: 0,
 		selectedFeature: 0,
 	}
 
