@@ -9,9 +9,13 @@
 		display: flex;
 		cursor: pointer;
 	}
-		#tiles :hover {
-			border: 3px solid rgb(21, 112, 112);
+		#tiles img {
 			border-radius: 1.1vw;
+			/* box-shadow: 0px 0px 1px grey; */
+		}
+		#tiles :hover {
+			border-radius: 1.1vw;
+			box-shadow: 10px 1px 20px grey;
 		}
 		.selectedTile {
 			border: 3px solid rgb(21, 112, 112);

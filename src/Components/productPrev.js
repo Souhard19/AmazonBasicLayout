@@ -1,6 +1,5 @@
 import React from 'react';
 
-import data from './component_data'
 import './productPrev.css'
 
 
@@ -10,7 +9,7 @@ export default function productPrev(props){
 
 	return(
 		<div className='productPreview image_display_section'>
-			<img src={data.colorOptions[0].imageUrl} alt="" />
+			<img src={props.img} alt="" />
 
 			<div className='time_feature'>
 				<p>{time}</p>
