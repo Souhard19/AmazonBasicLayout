@@ -13,8 +13,8 @@ class App extends Component {
 
 	state = {
 		data: data,
-		slectedTile: 0,
-		slectedFeature: 0,
+		selectedTile: 3,
+		selectedFeature: 0,
 	}
 
 	render() {
@@ -25,8 +25,8 @@ class App extends Component {
 				</nav>
 
 				<div id="prouct_info">
-					<ProductPrev img={this.state.data.colorOptions[this.state.slectedTile].imageUrl} />
-					<ProductDeatils data={this.state.data} />
+					<ProductPrev img={this.state.data.colorOptions[this.state.selectedTile].imageUrl} selectedFeature={this.state.selectedFeature} />
+					<ProductDeatils data={this.state.data} selectedTile={this.state.selectedTile} selectedFeature={this.state.selectedFeature} />
 				</div>
 			</div>
 		);

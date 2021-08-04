@@ -11,13 +11,21 @@ export default function productPrev(props){
 		<div className='productPreview image_display_section'>
 			<img src={props.img} alt="" />
 
-			<div className='time_feature'>
-				<p>{time}</p>
-			</div>
+			
 
 			<div className='heartbeat_feature'>
-				<i className='fas fa-heartbeat'></i>
-				<p>78</p>
+				{
+					props.selectedFeature ?
+						<>
+							<i className='fas fa-heartbeat'></i>
+							<p>78</p>
+						</>
+					:
+						<div className='time_feature'>
+							<div>{time}</div>
+						</div>
+				}
+				
 			</div>
 		</div>
 	);

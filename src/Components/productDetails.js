@@ -4,8 +4,22 @@ import './productDetails.css'
 const productDeatils = (props) => {
 
      const Tiles = props.data.colorOptions.map((item, pos) => {
+          let css = '';
+          if (pos === props.selectedTile){
+               css = 'selectedTile'
+          }
           return (
-               <img key={pos} src={item.imageUrl} alt={item.styleName} />
+               <img key={pos} className={css} src={item.imageUrl} alt={item.styleName} />
+          );
+     });
+
+     const features = props.data.featureList.map((item, pos) => {
+          let css = 'feature';
+          if (pos === props.selectedFeature) {
+               css += ' selected_feature'
+          }
+          return (
+               <button className={css}>{props.data.featureList[pos]}</button>
           );
      });
 
@@ -21,8 +35,7 @@ const productDeatils = (props) => {
 
                <h3 style={{ marginBottom: 0 }}>Features</h3>
                <div>
-                    <button className='feature selected_feature'>{props.data.featureList[1]}</button>
-                    <button className='feature'>{props.data.featureList[0]}</button>
+                    {features}
                </div>
 
                <button className='buy'>Buy Now</button>
