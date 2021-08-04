@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 
 import './App.css';
 import amazon from './images/amazon_img.jpeg';
-import productPrev from './Components/productPrev';
-import productDeatils from './Components/productDetails';
+import ProductPrev from './Components/productPrev';
+import ProductDeatils from './Components/productDetails';
 
 
 
-function App(){
+class App extends Component {
 
+	render() {
 		return (
 			<div className="App">
 				<nav>
@@ -16,15 +17,12 @@ function App(){
 				</nav>
 
 				<div id="prouct_info">
-
-					<productPrev />
-
-					<productDeatils />
-
+					<ProductPrev />
+					<ProductDeatils />
 				</div>
 			</div>
 		);
-	
+	}
 }
 
 export default App;

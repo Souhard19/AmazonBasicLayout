@@ -1,4 +1,4 @@
-details {
+.details {
 	text-align: left;
 }
 
@@ -43,7 +43,7 @@ details {
 			border: 0;
 			border-radius: 8px;
 
-			margin-top: 36px;
+			margin-top: 20px;
 
 			font-weight: 600;
 
